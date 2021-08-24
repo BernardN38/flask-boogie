@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/home_page.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Homepage!</h1>
+    <div id="feedback"></div>
+    <div id='score'>0</div>
+    <div id='timer'>60</div>
+    <div id='game-board'>
+    {% for row in boggle %}
+    <div class="row">
+        {% for letter in row %}
+        <div class="letter">{{letter}}</div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+    </div>
+    <form action="">
+    <label for="guess">Make Your guess:</label>
+    <input type="text" name="guess" id="guess" placeholder="hello world">
+    <button id="submit-btn">Submit</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../static/boggle.js"></script>
+
+</body>
+</html>

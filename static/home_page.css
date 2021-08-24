@@ -1,0 +1,23 @@
+.letter {
+    display: inline-block;
+    width: 10%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1px;
+    border: 1px solid black
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+}
+form {
+    text-align: center;
+}
+
+#score,#timer,#feedback {
+    text-align: center;
+}
